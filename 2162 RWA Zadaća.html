@@ -1,0 +1,171 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web stranica</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            background-color: #f2f2f2; 
+        }
+
+        header {
+            background-color: #009688;
+            color: #fff;
+            text-align: center;
+            padding: 1em;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center; 
+            flex-wrap: wrap; 
+        }
+
+        header img {
+            max-width: 100%;
+            height: auto;
+            max-width: 100px; 
+            margin-right: 10px; 
+        }
+
+        main {
+            display: flex;
+            flex: 1;
+            margin: 20px;
+        }
+
+        nav {
+            background-color: #4caf50; 
+            color: white;
+            padding: 20px;
+            width: 25%;
+            box-sizing: border-box;
+            margin-right: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: stretch;
+        }
+
+        nav a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            margin-bottom: 10px;
+            background-color: #388e3c; 
+            transition: background-color 0.3s; 
+        }
+
+        nav a:hover {
+            background-color: #2e7d32; 
+            color: black;
+        }
+
+        section {
+            flex: 1;
+            padding: 20px;
+            background-color: #fff; 
+            border-radius: 5px; 
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+            text-align: center; 
+        }
+
+        section img {
+            max-width: 100%;
+            height: auto;
+            max-width: 100%; 
+            border-radius: 5px; 
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+            margin-bottom: 10px; 
+        }
+
+        footer {
+            background-color: #009688; 
+            color: #fff;
+            text-align: center;
+            padding: 1em;
+            margin-top: 20px;
+        }
+
+        @media (max-width: 600px) {
+            header,
+            nav,
+            main {
+                width: 100%; 
+            }
+
+            nav {
+                padding: 10px;
+            }
+
+            nav a {
+                padding: 10px;
+            }
+
+            main {
+                margin: 10px;
+            }
+
+            section img {
+                max-width: 100%;
+            }
+        }
+
+        @media (min-width: 601px) {
+            main {
+                display: flex;
+            }
+
+            nav {
+                margin-right: 20px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <img src="grb.png" alt="Slika grba grada Dubrovnika">
+        <h1>Grad Dubrovnik</h1>
+    </header>
+
+    <main>
+        <nav>
+            <a href="#Početna">Početna</a>
+            <a href="https://hr.wikipedia.org/wiki/Dubrovnik" target="_blank">O Gradu</a>
+            <a href="https://tzdubrovnik.hr/get/savijeti_za_turiste/2194/informativni_uredi.html" target="_blank">Info</a>
+            <a href="https://visitdubrovnik.hr/hr/atrakcije/kultura/" target="_blank">Kulturna Baština</a>
+            <a href="#Zadaća">Zadaća</a>
+        </nav>
+
+        <section>
+            <img src="dubrovnik.jpg" alt="Slika grada Dubrovnika">
+            <h2>Dubrovnik</h2>
+            <p> (lat. Ragusium) je grad na krajnjem jugu Hrvatske. Upravno je središte Dubrovačko-neretvanske županije
+                i jedno od najvažnijih povijesno-turističkih središta Hrvatske. Prema popisu iz 2021. godine ima 41 562 stanovnika;
+                 njih 92% izjasnilo se Hrvatima. Stari grad Dubrovnik nalazi se od 1979. godine na UNESCO-ovom popisu svjetske
+                baštine. Gospodarstvo grada Dubrovnika od najranijih vremena temeljilo se na pomorskoj trgovini. U srednjem vijeku je
+                kao Dubrovačka Republika bio jedini grad-država na istočnoj obali Jadrana koji je konkurirao Mletačkoj Republici. Uz
+                svoje bogatstvo i diplomaciju, grad je postigao visok stupanj razvoja, posebno tijekom 15. i 16. stoljeća. Dubrovnik
+                je bio jedno od središta razvitka hrvatskoga jezika i književnosti te su u njemu stvarali mnogi značajni hrvatski
+                pjesnici, dramatičari, slikari, matematičari, fizičari i drugi učenjaci.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>Krešimir Vidović 2162 </p>
+		<P>kresimir.vidovic@fsre.sum.ba </p>
+    </footer>
+
+</body>
+
+</html>
